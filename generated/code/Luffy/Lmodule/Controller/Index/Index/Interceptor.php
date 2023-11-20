@@ -8,9 +8,10 @@ class Interceptor extends \Luffy\Lmodule\Controller\Index\Index implements \Mage
 {
     use \Magento\Framework\Interception\Interceptor;
 
-    public function __construct()
+    public function __construct(\Magento\Framework\Controller\Result\RawFactory $resultFactory)
     {
         $this->___init();
+        parent::__construct($resultFactory);
     }
 
     /**

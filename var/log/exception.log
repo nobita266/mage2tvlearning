@@ -6956,3 +6956,28 @@ Stack trace:
 #19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
 #20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
 #21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
+[2023-11-20T11:48:02.928536+00:00] main.CRITICAL: ParseError: syntax error, unexpected token "use", expecting "{" in /var/www/html/popup/app/code/Luffy/Lmodule/Controller/Index/Page.php:3
+Stack trace:
+#0 /var/www/html/popup/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#2 /var/www/html/popup/vendor/magento/framework/App/Router/ActionList.php(168): is_subclass_of()
+#3 /var/www/html/popup/vendor/magento/framework/App/Router/ActionList.php(148): Magento\Framework\App\Router\ActionList->validateActionClass()
+#4 /var/www/html/popup/vendor/magento/framework/App/Router/Base.php(301): Magento\Framework\App\Router\ActionList->get()
+#5 /var/www/html/popup/vendor/magento/framework/App/Router/Base.php(167): Magento\Framework\App\Router\Base->matchAction()
+#6 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Router\Base->match()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\Router\Base\Interceptor->___callParent()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\Router\Base\Interceptor->Magento\Framework\Interception\{closure}()
+#9 /var/www/html/popup/generated/code/Magento/Framework/App/Router/Base/Interceptor.php(23): Magento\Framework\App\Router\Base\Interceptor->___callPlugins()
+#10 /var/www/html/popup/vendor/magento/framework/App/FrontController.php(144): Magento\Framework\App\Router\Base\Interceptor->match()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#12 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#13 /var/www/html/popup/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#14 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#15 /var/www/html/popup/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#17 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/popup/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#19 /var/www/html/popup/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#20 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#21 /var/www/html/popup/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#22 {main} {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"use\", expecting \"{\" at /var/www/html/popup/app/code/Luffy/Lmodule/Controller/Index/Page.php:3)"} []
