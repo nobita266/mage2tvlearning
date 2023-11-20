@@ -1,0 +1,1 @@
+/var/www/html/popup/lib/web/mage/smart-keyboard-handler.js

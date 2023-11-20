@@ -11575,3 +11575,138 @@ Stack trace:
 [2023-11-20T10:16:39.675856+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["LAYOUT_GENERAL_CACHE_TAG"],"mode":"matchingTag"}} []
 [2023-11-20T10:16:39.676064+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["BLOCK_HTML"],"mode":"matchingTag"}} []
 [2023-11-20T10:16:39.676233+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.704061+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.706219+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["CONFIG"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.706413+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["LAYOUT_GENERAL_CACHE_TAG"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.706530+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["BLOCK_HTML"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.706700+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["COLLECTION_DATA"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.710199+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["REFLECTION"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.710905+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["DB_DDL"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711143+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["COMPILED_CONFIG"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711429+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["EAV"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711551+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["CUSTOMER_NOTIFICATION"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711652+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["INTEGRATION"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711751+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["INTEGRATION_API_CONFIG"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.711895+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.712107+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["WEBSERVICE"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:44.712221+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["TRANSLATE"],"mode":"matchingTag"}} []
+[2023-11-20T10:54:59.587040+00:00] main.CRITICAL: Magento\Framework\Exception\FileSystemException: Directory "/var/www/html/popup/pub/media/catalog/product/cache" cannot be created Warning!mkdir(): Permission denied in /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#1 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#2 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#3 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(243): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#4 /var/www/html/popup/vendor/magento/framework/Filesystem/Directory/Write.php(99): Magento\Framework\Filesystem\Driver\File->createDirectory()
+#5 /var/www/html/popup/vendor/magento/framework/Image/Adapter/AbstractAdapter.php(692): Magento\Framework\Filesystem\Directory\Write->create()
+#6 /var/www/html/popup/vendor/magento/framework/Image/Adapter/Gd2.php(178): Magento\Framework\Image\Adapter\AbstractAdapter->_prepareDestination()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\Image\Adapter\Gd2->save()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callParent()
+#9 /var/www/html/popup/vendor/magento/module-remote-storage/Plugin/Image.php(160): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\RemoteStorage\Plugin\Image->aroundSave()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#12 /var/www/html/popup/generated/code/Magento/Framework/Image/Adapter/Gd2/Interceptor.php(32): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callPlugins()
+#13 /var/www/html/popup/vendor/magento/framework/Image.php(75): Magento\Framework\Image\Adapter\Gd2\Interceptor->save()
+#14 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(395): Magento\Framework\Image->save()
+#15 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(343): Magento\MediaStorage\Service\ImageResize->generateResizedImage()
+#16 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(166): Magento\MediaStorage\Service\ImageResize->resize()
+#17 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(223): Magento\MediaStorage\Service\ImageResize->resizeFromImageName()
+#18 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(194): Magento\MediaStorage\App\Media->createLocalCopy()
+#19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
+#20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
+#21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
+[2023-11-20T10:54:59.616436+00:00] main.CRITICAL: Magento\Framework\Exception\FileSystemException: Directory "/var/www/html/popup/pub/media/catalog/product/cache" cannot be created Warning!mkdir(): Permission denied in /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#1 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#2 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#3 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(243): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#4 /var/www/html/popup/vendor/magento/framework/Filesystem/Directory/Write.php(99): Magento\Framework\Filesystem\Driver\File->createDirectory()
+#5 /var/www/html/popup/vendor/magento/framework/Image/Adapter/AbstractAdapter.php(692): Magento\Framework\Filesystem\Directory\Write->create()
+#6 /var/www/html/popup/vendor/magento/framework/Image/Adapter/Gd2.php(178): Magento\Framework\Image\Adapter\AbstractAdapter->_prepareDestination()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\Image\Adapter\Gd2->save()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callParent()
+#9 /var/www/html/popup/vendor/magento/module-remote-storage/Plugin/Image.php(160): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\RemoteStorage\Plugin\Image->aroundSave()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#12 /var/www/html/popup/generated/code/Magento/Framework/Image/Adapter/Gd2/Interceptor.php(32): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callPlugins()
+#13 /var/www/html/popup/vendor/magento/framework/Image.php(75): Magento\Framework\Image\Adapter\Gd2\Interceptor->save()
+#14 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(395): Magento\Framework\Image->save()
+#15 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(343): Magento\MediaStorage\Service\ImageResize->generateResizedImage()
+#16 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(166): Magento\MediaStorage\Service\ImageResize->resize()
+#17 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(223): Magento\MediaStorage\Service\ImageResize->resizeFromImageName()
+#18 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(194): Magento\MediaStorage\App\Media->createLocalCopy()
+#19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
+#20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
+#21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
+[2023-11-20T10:54:59.616547+00:00] main.CRITICAL: Magento\Framework\Exception\FileSystemException: Directory "/var/www/html/popup/pub/media/catalog/product/cache" cannot be created Warning!mkdir(): Permission denied in /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#1 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#2 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#3 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(243): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#4 /var/www/html/popup/vendor/magento/framework/Filesystem/Directory/Write.php(99): Magento\Framework\Filesystem\Driver\File->createDirectory()
+#5 /var/www/html/popup/vendor/magento/framework/Image/Adapter/AbstractAdapter.php(692): Magento\Framework\Filesystem\Directory\Write->create()
+#6 /var/www/html/popup/vendor/magento/framework/Image/Adapter/Gd2.php(178): Magento\Framework\Image\Adapter\AbstractAdapter->_prepareDestination()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\Image\Adapter\Gd2->save()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callParent()
+#9 /var/www/html/popup/vendor/magento/module-remote-storage/Plugin/Image.php(160): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\RemoteStorage\Plugin\Image->aroundSave()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#12 /var/www/html/popup/generated/code/Magento/Framework/Image/Adapter/Gd2/Interceptor.php(32): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callPlugins()
+#13 /var/www/html/popup/vendor/magento/framework/Image.php(75): Magento\Framework\Image\Adapter\Gd2\Interceptor->save()
+#14 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(395): Magento\Framework\Image->save()
+#15 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(343): Magento\MediaStorage\Service\ImageResize->generateResizedImage()
+#16 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(166): Magento\MediaStorage\Service\ImageResize->resize()
+#17 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(223): Magento\MediaStorage\Service\ImageResize->resizeFromImageName()
+#18 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(194): Magento\MediaStorage\App\Media->createLocalCopy()
+#19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
+#20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
+#21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
+[2023-11-20T10:54:59.633158+00:00] main.CRITICAL: Magento\Framework\Exception\FileSystemException: Directory "/var/www/html/popup/pub/media/catalog/product/cache" cannot be created Warning!mkdir(): Permission denied in /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#1 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#2 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#3 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(243): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#4 /var/www/html/popup/vendor/magento/framework/Filesystem/Directory/Write.php(99): Magento\Framework\Filesystem\Driver\File->createDirectory()
+#5 /var/www/html/popup/vendor/magento/framework/Image/Adapter/AbstractAdapter.php(692): Magento\Framework\Filesystem\Directory\Write->create()
+#6 /var/www/html/popup/vendor/magento/framework/Image/Adapter/Gd2.php(178): Magento\Framework\Image\Adapter\AbstractAdapter->_prepareDestination()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\Image\Adapter\Gd2->save()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callParent()
+#9 /var/www/html/popup/vendor/magento/module-remote-storage/Plugin/Image.php(160): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\RemoteStorage\Plugin\Image->aroundSave()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#12 /var/www/html/popup/generated/code/Magento/Framework/Image/Adapter/Gd2/Interceptor.php(32): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callPlugins()
+#13 /var/www/html/popup/vendor/magento/framework/Image.php(75): Magento\Framework\Image\Adapter\Gd2\Interceptor->save()
+#14 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(395): Magento\Framework\Image->save()
+#15 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(343): Magento\MediaStorage\Service\ImageResize->generateResizedImage()
+#16 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(166): Magento\MediaStorage\Service\ImageResize->resize()
+#17 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(223): Magento\MediaStorage\Service\ImageResize->resizeFromImageName()
+#18 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(194): Magento\MediaStorage\App\Media->createLocalCopy()
+#19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
+#20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
+#21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
+[2023-11-20T10:54:59.673933+00:00] main.CRITICAL: Magento\Framework\Exception\FileSystemException: Directory "/var/www/html/popup/pub/media/catalog/product/cache" cannot be created Warning!mkdir(): Permission denied in /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#1 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#2 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(262): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#3 /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php(243): Magento\Framework\Filesystem\Driver\File->mkdirRecursive()
+#4 /var/www/html/popup/vendor/magento/framework/Filesystem/Directory/Write.php(99): Magento\Framework\Filesystem\Driver\File->createDirectory()
+#5 /var/www/html/popup/vendor/magento/framework/Image/Adapter/AbstractAdapter.php(692): Magento\Framework\Filesystem\Directory\Write->create()
+#6 /var/www/html/popup/vendor/magento/framework/Image/Adapter/Gd2.php(178): Magento\Framework\Image\Adapter\AbstractAdapter->_prepareDestination()
+#7 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\Image\Adapter\Gd2->save()
+#8 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callParent()
+#9 /var/www/html/popup/vendor/magento/module-remote-storage/Plugin/Image.php(160): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(135): Magento\RemoteStorage\Plugin\Image->aroundSave()
+#11 /var/www/html/popup/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\Image\Adapter\Gd2\Interceptor->Magento\Framework\Interception\{closure}()
+#12 /var/www/html/popup/generated/code/Magento/Framework/Image/Adapter/Gd2/Interceptor.php(32): Magento\Framework\Image\Adapter\Gd2\Interceptor->___callPlugins()
+#13 /var/www/html/popup/vendor/magento/framework/Image.php(75): Magento\Framework\Image\Adapter\Gd2\Interceptor->save()
+#14 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(395): Magento\Framework\Image->save()
+#15 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(343): Magento\MediaStorage\Service\ImageResize->generateResizedImage()
+#16 /var/www/html/popup/vendor/magento/module-media-storage/Service/ImageResize.php(166): Magento\MediaStorage\Service\ImageResize->resize()
+#17 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(223): Magento\MediaStorage\Service\ImageResize->resizeFromImageName()
+#18 /var/www/html/popup/vendor/magento/module-media-storage/App/Media.php(194): Magento\MediaStorage\App\Media->createLocalCopy()
+#19 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
+#20 /var/www/html/popup/pub/get.php(106): Magento\Framework\App\Bootstrap->run()
+#21 {main} {"exception":"[object] (Magento\\Framework\\Exception\\FileSystemException(code: 0): Directory \"/var/www/html/popup/pub/media/catalog/product/cache\" cannot be created Warning!mkdir(): Permission denied at /var/www/html/popup/vendor/magento/framework/Filesystem/Driver/File.php:272)"} []
