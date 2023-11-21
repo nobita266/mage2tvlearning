@@ -15,6 +15,14 @@ class Index extends Template {
         return $this;
     }
 
+    public function getSubTitle(): string{
+        return "Magento developer";
+    }
+    public function getNodeHtml(): string{
+        return $this->getLayout()->createBlock(Note::class)->toHtml();
+
+    }
+
     
     
 }

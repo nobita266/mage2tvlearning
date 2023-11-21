@@ -11,7 +11,9 @@
    </head>
    <body>
         <referenceContainer name="content">
-            <block class="Luffy\LayoutExample\Block\Layout\Index" name="custom_block" template="Luffy_LayoutExample::content.phtml" />
+            <block name="layut_example" class="Luffy\LayoutExample\Block\Layout\Index"  template="Luffy_LayoutExample::content.phtml">
+             <block name="layout_note" class="Luffy\LayoutExample\Block\Layout\Note"  template="Luffy_LayoutExample::note.phtml"/>
+             </block>
         </referenceContainer>
    </body>
 </page>
