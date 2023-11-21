@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700484134;s:6:"expire";i:1732020134;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700488324;s:6:"expire";i:1732024324;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><layout id="1column"><update handle="empty"/>
 <referenceContainer name="page.wrapper">

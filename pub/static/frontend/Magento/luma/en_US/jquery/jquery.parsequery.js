@@ -1,1 +1,0 @@
-/var/www/html/popup/lib/web/jquery/jquery.parsequery.js

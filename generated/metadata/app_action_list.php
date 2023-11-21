@@ -1,5 +1,7 @@
 <?php return array (
   'luffy\\lmodule\\controller\\index\\index' => 'Luffy\\Lmodule\\Controller\\Index\\Index',
+  'luffy\\lmodule\\controller\\index\\json' => 'Luffy\\Lmodule\\Controller\\Index\\Json',
+  'luffy\\lmodule\\controller\\index\\page' => 'Luffy\\Lmodule\\Controller\\Index\\Page',
   'magento\\adminadobeims\\controller\\adminhtml\\oauth\\imscallback' => 'Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsCallback',
   'magento\\adminadobeims\\controller\\adminhtml\\oauth\\imsreauthcallback' => 'Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsReauthCallback',
   'magento\\adminanalytics\\controller\\adminhtml\\config\\disableadminusage' => 'Magento\\AdminAnalytics\\Controller\\Adminhtml\\Config\\DisableAdminUsage',

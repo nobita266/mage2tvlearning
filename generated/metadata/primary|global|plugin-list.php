@@ -3723,6 +3723,8 @@
     'Magento\\Framework\\MessageQueue\\Lock\\WriterInterface' => NULL,
     'Magento\\MessageQueue\\Model\\ResourceModel\\Lock' => NULL,
     'RefreshLock' => NULL,
+    'Magento\\MysqlMq\\Model\\Driver\\ExchangeFactory' => NULL,
+    'Magento\\MysqlMq\\Model\\Driver\\Bulk\\ExchangeFactory' => NULL,
     'Magento\\Newsletter\\Model\\Session\\Storage' => NULL,
     'Magento\\SalesRule\\Model\\ResourceModel\\Rule\\AssociatedEntityMap' => NULL,
     'Magento\\OpenSearch\\Model\\Adapter\\FieldMapper\\ProductFieldMapper' => 

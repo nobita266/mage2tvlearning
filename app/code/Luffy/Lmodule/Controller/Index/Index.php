@@ -8,7 +8,8 @@ class Index implements ActionInterface{
 
     }
     public function execute(){
-        return $this->resultFactory->create()->setContents("Example");
+        return $this->resultFactory->create()
+        ->setheader("Content-Type","application/json")
+        ->setContents('<root><name>Yaman saini</name><job>Magento Developer</job></root>');
     }
-
 }
