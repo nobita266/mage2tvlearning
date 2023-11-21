@@ -12433,3 +12433,5 @@ Stack trace:
 #2 {main} {"report_id":"4c7674b051861944287647c4f133a836147d62d2ff3c0de126b4a7f93ed137a4","exception":"[object] (InvalidArgumentException(code: 0): Invalid return type at /var/www/html/popup/vendor/magento/framework/App/Http.php:124)"} []
 [2023-11-21T09:08:45.275495+00:00] main.ERROR: Invalid return type [] []
 [2023-11-21T09:09:18.236162+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2023-11-21T09:35:55.853485+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
+[2023-11-21T09:37:06.725163+00:00] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["FPC"],"mode":"matchingTag"}} []
