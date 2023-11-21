@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700561816;s:6:"expire";i:1732097816;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700568113;s:6:"expire";i:1732104113;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6927,6 +6927,9 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700561816;s:6:"expire";i:1732097816;s:4:"t
    <referenceContainer name="content">
       <block class="Luffy\LayoutExample\Block\Layout\Index" name="custom_block" template="Luffy_LayoutExample::content.phtml"/>
    </referenceContainer>
+</body>
+</handle><handle id="customer_account_login"><body>
+   <move element="customer.new" destination="customer.login.container" before="customer_form_login"/>
 </body>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>
    <title>Review Order</title>
