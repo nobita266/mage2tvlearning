@@ -6981,3 +6981,8 @@ Stack trace:
 #20 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
 #21 /var/www/html/popup/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
 #22 {main} {"exception":"[object] (ParseError(code: 0): syntax error, unexpected token \"use\", expecting \"{\" at /var/www/html/popup/app/code/Luffy/Lmodule/Controller/Index/Page.php:3)"} []
+[2023-11-21T09:07:01.138640+00:00] main.CRITICAL: InvalidArgumentException: Invalid return type in /var/www/html/popup/vendor/magento/framework/App/Http.php:124
+Stack trace:
+#0 /var/www/html/popup/vendor/magento/framework/App/Bootstrap.php(264): Magento\Framework\App\Http->launch()
+#1 /var/www/html/popup/pub/index.php(30): Magento\Framework\App\Bootstrap->run()
+#2 {main} {"report_id":"4c7674b051861944287647c4f133a836147d62d2ff3c0de126b4a7f93ed137a4","exception":"[object] (InvalidArgumentException(code: 0): Invalid return type at /var/www/html/popup/vendor/magento/framework/App/Http.php:124)"} []

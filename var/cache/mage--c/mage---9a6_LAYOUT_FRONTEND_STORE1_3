@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700488324;s:6:"expire";i:1732024324;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700557765;s:6:"expire";i:1732093765;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6918,6 +6918,19 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700488324;s:6:"expire";i:1732024324;s:4:"t
 </handle><handle id="wishlist_shared_index" layout="1column"><body>
    <referenceContainer name="content">
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
+   </referenceContainer>
+</body>
+</handle><handle id="layout_layout_index"><head>
+   <title>Layout Example</title>
+</head>
+<body>
+   <referenceBlock name="page.main.title">
+      <action method="setPageTitle">
+         <argument name="page_title" xsi:type="string">Something else</argument>
+      </action>
+   </referenceBlock>
+   <referenceContainer name="content">
+      <block class="Magento\Framework\View\Element\Template" name="custom_block" template="Luffy_LayoutExample::content.phtml"/>
    </referenceContainer>
 </body>
 </handle><handle id="braintree_googlepay_review" layout="1column"><head>

@@ -10,7 +10,7 @@ class Index implements ActionInterface{
     }
 
     public function execute(){
-        $resultPage = $this->resultFactory->create();
+        return $this->resultFactory->create();
 
     }
 }

@@ -16,7 +16,7 @@
             </action>
         </referenceBlock>
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="custom_block" template="Playlist_LayoutExample::content.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="custom_block" template="Luffy_LayoutExample::content.phtml" />
         </referenceContainer>
    </body>
 </page>

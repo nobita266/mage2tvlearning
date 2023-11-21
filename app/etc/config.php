@@ -345,7 +345,7 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
-        'Luffy_Layoutexample     ' => 1,
+        'Luffy_LayoutExample' => 1,
         'Luffy_Lmodule' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
