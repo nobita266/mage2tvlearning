@@ -345,6 +345,7 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
+        'Luffy_HeaderFooterScripts' => 1,
         'Luffy_LayoutExample' => 1,
         'Luffy_LayoutMoveExample' => 1,
         'Luffy_Lmodule' => 1,

@@ -293,6 +293,7 @@
   'Laminas\\View\\Helper\\HelperInterface' => false,
   'League\\Flysystem\\FilesystemAdapter' => false,
   'LogicException' => false,
+  'Luffy\\HeaderFooterScripts\\Controller\\Index\\Index' => false,
   'Luffy\\LayoutExample\\Block\\Layout\\Index' => false,
   'Luffy\\LayoutExample\\Controller\\Layout\\Index' => true,
   'Luffy\\LayoutExample\\Controller\\Layout\\Index\\Interceptor' => false,

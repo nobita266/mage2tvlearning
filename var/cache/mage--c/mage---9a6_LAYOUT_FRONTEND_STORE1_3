@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700568113;s:6:"expire";i:1732104113;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700630128;s:6:"expire";i:1732166128;s:4:"tags";s:37:"9a6_LAYOUT_GENERAL_CACHE_TAG,9a6_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6919,6 +6919,11 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1700568113;s:6:"expire";i:1732104113;s:4:"t
    <referenceContainer name="content">
       <block class="Magento\Wishlist\Block\Share\Wishlist" name="customer.wishlist" template="Magento_Wishlist::shared.phtml" cacheable="false"/>
    </referenceContainer>
+</body>
+</handle><handle id="default"><body>
+   <referenceBlock name="head.additional">
+      <block name="header_footer_scripts_default" template="Luffy_HeaderFooterScripts::head_additional/default.phtml" class="Magento\Framework\View\Element\Template"/>
+   </referenceBlock>
 </body>
 </handle><handle id="layout_layout_index"><head>
    <title>Layout Example</title>

@@ -1,4 +1,5 @@
 <?php return array (
+  'luffy\\headerfooterscripts\\controller\\index\\index' => 'Luffy\\HeaderFooterScripts\\Controller\\Index\\Index',
   'luffy\\layoutexample\\controller\\layout\\index' => 'Luffy\\LayoutExample\\Controller\\Layout\\Index',
   'luffy\\lmodule\\controller\\index\\index' => 'Luffy\\Lmodule\\Controller\\Index\\Index',
   'luffy\\lmodule\\controller\\index\\json' => 'Luffy\\Lmodule\\Controller\\Index\\Json',
